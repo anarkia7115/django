@@ -25,12 +25,13 @@ SECRET_KEY = 'm-7-&a@a#kbw6fb+u$*u-rm!i5&fw%w$ezg)-=$7567_#1&=q&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.2.187', 'localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
